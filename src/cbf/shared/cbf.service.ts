@@ -108,4 +108,12 @@ export class CbfService {
       },
     }).then((json) => json.data);
   }
+
+  abreviacoesTimes() {
+    return Axios.get(`http://futebolms.com.br/v5/wp-content/uploads/api/gerais/abreviacoes.json`, {
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8'
+      },
+    }).then((json) => json.data);
+  }
 }

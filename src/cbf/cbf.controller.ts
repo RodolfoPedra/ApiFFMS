@@ -101,4 +101,9 @@ export class CbfController {
   ): any {
     return this.CbfService.classificacaoCampeonatoGrupo(idFase, idGrupo);
   }
+
+  @Get('abreviacoes')
+  getAbreviacoesNomesTimes(  ): any {
+    return this.CbfService.abreviacoesTimes();
+  }
 }
